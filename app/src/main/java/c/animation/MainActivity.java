@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 textView.startAnimation(anim);
+                //Starting Animation
                 startanim.setVisibility(view.INVISIBLE);
                 stopanim.setVisibility(view.VISIBLE);
             }
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     stopanim.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            //Stoping Animation
             textView.clearAnimation();
             stopanim.setVisibility(view.INVISIBLE);
             startanim.setVisibility(view.VISIBLE);
